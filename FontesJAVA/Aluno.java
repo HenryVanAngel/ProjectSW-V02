@@ -4,6 +4,8 @@ public class Aluno extends Pessoa {
 	
 	private int codigo;
 
+	private String nome;
+
 	public void SolicitarMatricula() {
 
 	}
