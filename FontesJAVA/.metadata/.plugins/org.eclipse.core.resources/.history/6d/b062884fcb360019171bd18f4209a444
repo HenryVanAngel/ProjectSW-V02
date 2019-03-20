@@ -1,0 +1,26 @@
+package br.com.hiox.teste;
+
+import br.com.hiox.bean.Usuario;
+import br.com.hiox.dao.UsuarioDAO;
+
+public class PesqUsuario {
+
+	public static void main(String[] args) {
+		
+		try {
+			UsuarioDAO dao = new UsuarioDAO();
+			Usuario u = new Usuario();
+			
+			
+			u = dao.consultar();
+			
+			
+			System.out.println(u.getAll());
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
+
+	}
+
+}

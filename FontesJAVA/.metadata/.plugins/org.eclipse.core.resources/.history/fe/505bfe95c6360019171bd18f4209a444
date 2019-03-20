@@ -1,0 +1,14 @@
+package br.com.hiox.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import br.com.hiox.bean.Usuario;
+
+public class UsuarioDAO {
+	public Usuario consultar(int codigo) throws Exception{
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin@127.0.0.1:XE","system","fiap19");
+		
+		return null;
+	}
+}

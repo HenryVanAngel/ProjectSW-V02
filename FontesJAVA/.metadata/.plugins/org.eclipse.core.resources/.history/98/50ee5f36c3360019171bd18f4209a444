@@ -1,0 +1,7 @@
+package br.com.hiox.bean;
+
+import java.io.Serializable;
+
+public class Usuario implements Serializable{
+
+}

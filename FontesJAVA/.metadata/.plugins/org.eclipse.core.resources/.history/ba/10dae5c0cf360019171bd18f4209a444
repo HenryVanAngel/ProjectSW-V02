@@ -1,0 +1,22 @@
+package br.com.hiox.teste;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class otoTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> comidas = new ArrayList<>();
+			comidas.add("PERA");
+			comidas.add("HOT DOG");
+			comidas.add("COSTELA");
+			comidas.add("PICANHA");
+			comidas.add("HAMBURGUER");
+			
+			for (String com : comidas) {
+				System.out.println(com);
+			}
+	}
+
+}

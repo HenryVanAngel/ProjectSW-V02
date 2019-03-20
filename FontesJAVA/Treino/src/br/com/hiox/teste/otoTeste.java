@@ -1,0 +1,64 @@
+package br.com.hiox.teste;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+public class otoTeste {
+	private static List<String> comidas = new ArrayList<String>();
+	public static void main(String[] args) {
+		// TODO Auto-generated methlod stub
+
+			comidas.add("PERA");
+			comidas.add("HOT DOG");
+			comidas.add("COSTELA");
+			comidas.add("PICANHA");
+			comidas.add("HAMBURGUER");
+			
+			//for (String com : comidas) {
+				//System.out.println(com);
+			comidas.forEach(a ->System.out.println(a));
+			//}
+			
+			List<String> comidaAtual= remove(JOptionPane.showInputDialog("Qual item voce gostaria de remover"),comidas);
+			for (String comA : comidaAtual) {
+				System.out.println(comA);
+				System.out.println("");
+			}
+			
+			List<String> comidaAdd = adcionar(JOptionPane.showInputDialog("ADD Comida"),comidas);
+			
+			for(String comN : comidaAdd) {
+				System.out.println(comN);
+				System.out.println("");
+			}
+			contarCaracteres(comidas);
+			
+			
+			
+			
+	}
+	public static List<String> remove(String comida,List<String> lista){
+		lista.remove(comida);
+		return lista;
+	}
+	public static List<String> adcionar(String comida,List<String> lista){
+		lista.add(comida);
+		return lista;
+	}
+	public static void apagarLista(List<String> lista) {
+			lista.removeAll(lista);
+	}
+	
+	public static void contarCaracteres(List<String> lista) {
+		int tamanho = 0;
+		
+		for(String boiando : lista) {
+			tamanho += boiando.length();
+		}
+		System.out.println(tamanho);
+		System.out.println("");
+	}
+}

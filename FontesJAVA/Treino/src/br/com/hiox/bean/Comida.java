@@ -1,0 +1,36 @@
+package br.com.hiox.bean;
+
+public class Comida {
+	
+	private String descricao;
+	
+	private Double preco;
+
+	
+	public Comida() {
+		super();
+	}
+
+	public Comida(String descricao, Double preco) {
+		super();
+		this.descricao = descricao;
+		this.preco = preco;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public Double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(Double preco) {
+		this.preco = preco;
+	}
+	
+
+}

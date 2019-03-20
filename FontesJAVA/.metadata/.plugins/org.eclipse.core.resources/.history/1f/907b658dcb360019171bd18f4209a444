@@ -1,0 +1,29 @@
+package br.com.hiox.teste;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.hiox.bean.Usuario;
+import br.com.hiox.dao.UsuarioDAO;
+
+public class PesqUsuario {
+
+	public static void main(String[] args) {
+		
+		try {
+			UsuarioDAO dao = new UsuarioDAO();
+			Usuario u = new Usuario();
+			List<Usuario> listaDoCapeta = new ArrayList<Usuario>();
+			
+			listaDoCapeta = dao.consultar();
+			
+			
+			System.out.println(listaDoCapeta.get(3));
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package br.com.hiox.teste;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class otoTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated methlod stub
+		List<String> comidas = new LinkedList<String>();
+			comidas.add("PERA");
+			comidas.add("HOT DOG");
+			comidas.add("COSTELA");
+			comidas.add("PICANHA");
+			comidas.add("HAMBURGUER");
+			
+			//for (String com : comidas) {
+				//System.out.println(com);
+			//}
+			
+			List<String> comidaAtual= remove(2,comidas);
+			for (String comA : comidaAtual) {
+				System.out.println(comA);
+			}
+			
+			
+			
+	}
+	public static List<String> remove(int qnt,List<String> lista){
+		List<String> comidas = lista;
+		
+		for(int i=0;i<qnt;i++) {
+			comidas.remove(comidas.get(i));
+		}
+		
+		return comidas;
+	}
+}
